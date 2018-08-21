@@ -1,4 +1,5 @@
 import sorting.Bubble;
+import sorting.Heap;
 import sorting.Insertion;
 import sorting.Selection;
 
@@ -10,7 +11,9 @@ public class Main {
 
         printArr(arr);
 
-        Selection.selection(arr);
+        for (int i = arr.length; i > 1; i--){
+            Heap.heap(arr, i - 1);
+        }
 
         printArr(arr);
 
