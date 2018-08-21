@@ -2,7 +2,7 @@ package sorting;
 
 public class Selection {
 
-    public static void selection(int[] list) {
+    public void sort(int[] list) {
 
         for (int i = 0; i < list.length - 1; i++) {
 

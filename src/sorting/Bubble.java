@@ -3,7 +3,7 @@ package sorting;
 public class Bubble {
 
 
-    public static void bubble(int[] list){
+    public void bubble(int[] list){
 
         int n = list.length;
 
@@ -21,7 +21,7 @@ public class Bubble {
         }
     }
 
-    public static void improvedBubble(int[] list) {
+    public void improvedBubble(int[] list) {
 
         boolean carryOn = true;
 
@@ -47,7 +47,7 @@ public class Bubble {
     }
 
 
-    public static void superBubble(int[] list){
+    public void superBubble(int[] list){
 
         int currentLowest = 0;
         int currentHighest = list.length - 1;

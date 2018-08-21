@@ -1,19 +1,30 @@
-import sorting.Bubble;
-import sorting.Heap;
-import sorting.Insertion;
-import sorting.Selection;
+import sorting.*;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        int[] arr = {10, 20, 60, 40, 30, 90, 80, 0, 20};
+        int[] arr = {10, 20, 60, 40, 30, 90, 80, 0, 20, 100};
 
         printArr(arr);
 
-        for (int i = arr.length; i > 1; i--){
-            Heap.heap(arr, i - 1);
-        }
+//        Bubble bb = new Bubble();
+//        Selection s = new Selection();
+//        Insertion i = new Insertion();
+//        Heap h = new Heap();
+//        for (int i = arr.length; i > 1; i--){
+//            H.sort(arr, i - 1);
+//        }
+
+//        Quick qs = new Quick();
+//        qs.sort(arr, 0, arr.length - 1 );
+
+//        Merge m = new Merge();
+//        m.sort(arr,0, arr.length - 1);
+
+        Bucket bk = new Bucket();
+
+        bk.sort(arr, 100);
 
         printArr(arr);
 

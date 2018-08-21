@@ -2,7 +2,7 @@ package sorting;
 
 public class Heap {
 
-    public static void heap(int[] arr, int bound) {
+    public void sort(int[] arr, int bound) {
 
         int i, o;
         int lChild, rChild, mChild, root, temp;
