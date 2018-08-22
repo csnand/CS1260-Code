@@ -1,3 +1,5 @@
+import search.Binary;
+import search.Sequential;
 import sorting.*;
 
 public class Main {
@@ -25,6 +27,12 @@ public class Main {
         Bucket bk = new Bucket();
 
         bk.sort(arr, 100);
+
+        Sequential ssearch = new Sequential();
+        Binary bsearch = new Binary();
+
+        System.out.println(ssearch.search(arr, 100));
+        System.out.println(bsearch.search(arr, 100));;
 
         printArr(arr);
 
