@@ -23,7 +23,7 @@ public class Merge {
         int low = lo;
         int high = n;
 
-        int end_low = mid + 1;
+        int end_low = mid;
         int start_high = mid + 1;
 
         while ((lo <= end_low) && (start_high <= high)) {
@@ -31,11 +31,13 @@ public class Merge {
                 low++;
             } else {
                 int temp = arr[start_high];
+
                 for (int i = start_high - 1; i >= low; i--) {
                     arr[i + 1] = arr[i];
                 }
 
                 arr[low] = temp;
+
                 low++;
                 end_low++;
                 start_high++;

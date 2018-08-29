@@ -4,16 +4,13 @@ import java.util.Random;
 
 public class Quick {
 
-    private int partition(int arr[], int low, int high)
-    {
+    private int partition(int arr[], int low, int high) {
         int pivot = arr[high];
         int i = (low-1); // index of smaller element
-        for (int j = low; j < high; j++)
-        {
+        for (int j = low; j < high; j++) {
             // If current element is smaller than or
             // equal to pivot
-            if (arr[j] <= pivot)
-            {
+            if (arr[j] <= pivot) {
                 i++;
 
                 // swap arr[i] and arr[j]
